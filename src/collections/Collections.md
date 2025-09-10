@@ -1,10 +1,11 @@
 
 # Sequences
-| Collection      | Best For                                    | Fastest Operations                 | Avoid When                        |
-|-----------------|---------------------------------------------|-------------------------------------|-----------------------------------|
-| `Vec<T>`        | Most general sequence storage               | Push/pop at end, random access      | Frequent front/mid insert/remove  |
-| `VecDeque<T>`   | Queues, buffers, sliding windows            | Push/pop at both ends               | Mid-list insert/remove            |
-| `LinkedList<T>` | Frequent insert/remove in interior          | Insert/remove at known position     | Random access, small lists        |
+| Collection      | Best For                           | Fastest Operations                       | Avoid When                                                                         |
+|-----------------|------------------------------------|------------------------------------------|------------------------------------------------------------------------------------|
+| `Vec<T>`        | Most general sequence storage      | Push/pop at end, random access           | Frequent front/mid insert/remove                                                   |
+| `VecDeque<T>`   | Queues, buffers, sliding windows   | Push/pop at both ends                    | Mid-list insert/remove                                                             |
+| `LinkedList<T>` | Frequent insert/remove in interior | Insert/remove at known position          | Random access, small lists                                                         |
+ | `Array [T; N]`  | Fixed size; known at compile time. | Fast, stack-allocated, fixed-length data | Size is not known at compile time or you need a flexible, growable collection type |
 
 
 # Maps
