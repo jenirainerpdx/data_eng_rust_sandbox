@@ -1,0 +1,8 @@
+[package]
+name = "polars_basic"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+polars = { version = "0.51.0", features = ["polars-io", "lazy", "csv", "round_series", "is_between"] }
+chrono = "0.4.42"
